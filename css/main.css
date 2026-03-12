@@ -1,0 +1,70 @@
+/* 기본 세팅 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+/* 전체 레이아웃 */
+.wrap {
+  width: 960px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  /* background-color: aliceblue; */
+}
+/* 메뉴 */
+.navi {
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+  background-color: #ffffff;
+}
+.navi > ul {
+  display: flex;
+  gap: 10px;
+  width: 600px;
+  margin: 0 auto;
+}
+.navi > ul > li {
+  width: calc(100% / 4);
+  text-align: center;
+}
+.navi > ul > li > a {
+  display: block;
+  padding: 20px 0;
+  background-color: aliceblue;
+}
+.navi > ul > li > a:hover {
+  background-color: rgb(229, 207, 255);
+}
+/* 이용안내 설명 */
+.container {
+  width: 400px;
+  margin: 50px auto;
+}
+.container li {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.container h2 {
+  padding-bottom: 10px;
+}
+/* 메뉴 해당하는 아이디로 타겟 */
+#intro:target {
+    background-color: rgb(255, 239, 218);
+}
+#room:target {
+    background-color: rgb(255, 194, 220);
+}
+#reservation:target {
+    background-color: rgb(182, 232, 255);
+}
